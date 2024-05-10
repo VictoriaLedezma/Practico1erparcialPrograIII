@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 1er Parcial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="div.html" 
+            id="form" 
+            class="custom-form"
+            onsubmit=""
+            method="get"
+            novalidate>
+            
+            <div class="col-md-6">
+                <label for="InputNombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="InputNombre" placeholder="Nombre...">
+            </div>
+            
+            <div class="col-md-6">
+            <label for="InputApellido" class="form-label">Apellido</label>
+            <input type="text" name="Apellido" class="form-control" id="InputApellido" placeholder="Apellido...">
+            </div>
+
+            <div class="col-md-6">
+            <label for="InputDireccion" class="form-label">Direccion</label>
+            <input type="text" name="Direccion" class="form-control" id="InputDireccion" placeholder="Direccion...">
+            </div>
+
+            <div class="col-md-6">
+            <label for="InputCodigo" class="form-label">Codigo Postal</label>
+            <input type="text" name="Codigo" class="form-control" id="InputCodigo" placeholder="Codigo...">
+            </div>
+
+            <div class="col-md-6">
+            <label for="InputEmail" class="form-label">Direccion de Email</label>
+            <input type="text" name="email" class="form-control" id="InputEmail" placeholder="Email...">
+            </div>
+
+
+              <!--Profesiones-->
+              <div class="col-md-6">
+                <label for="pais" class="form-label">Profesiones</label>
+                <select class="form-select" id="profesiones" name="Profesiones">
+                  <option value="" disabled selected>Seleccione una profesion</option>
+                  <option value="Medico">Medico</option>
+                  <option value="Docente">Docente</option>
+                  <option value="Comerciante">Comerciante</option>
+                  <option value="Abogado">Abogado</option>
+                </select>
+              </div>
+                <!--Categorias de profesiones-->
+                <div class="col-md-6">
+                    <label for="categoria" class="form-label">Categorias</label>
+                    <select class="form-select" id="categoria" name="categoria" >
+                      <option value="" disabled selected>Seleccione una categoria</option>
+                      <!-- Aquí las provincias se cargarán dinámicamente con JavaScript -->
+                    </select>
+                </div>
+                <!--observaciones-->
+                <div class="col-md-6">
+                    <label for="observaciones" class="form-label">Observaciones</label>
+                    <textarea class="form-control" id="observaciones" name="observaciones" rows="4"></textarea>
+                  </div>
+                  <br>
+                  <!--botonenviar-->
+                  <button type="submit" class="btn btn-primary col-md-6">Enviar</button>
+                </form>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./scripts/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

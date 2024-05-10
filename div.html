@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <div class="div" id="div">
+        
+    </div>
+    <script>
+        // Obtener los valores del localStorage
+        const nombre = localStorage.getItem("nombre");
+        const apellido = localStorage.getItem("Apellido");
+        const Direccion = localStorage.getItem("Direccion");
+        const Codigo = localStorage.getItem("Codigo");
+        const email = localStorage.getItem("email");
+        const Profesiones = localStorage.getItem("Profesiones");
+        const categoria = localStorage.getItem("categoria");
+
+        
+        alert("Valores del formulario: \n" +
+            "Nombre: " + nombre + "\n" +
+            "Apellido: " + apellido + "\n" +
+            "Direccion: " + Direccion + "\n" +
+            "Codigo: " + Codigo + "\n" +
+            "email: " + email + "\n" +
+            "profesiones: " + Profesiones + "\n" +
+            "categoria: " + categoria
+        );
+
+        
+        const div = document.getElementById("div");
+        div.innerHTML = `
+            <p>Nombre: ${nombre}</p>
+            <p>Apellido: ${apellido}</p>
+            <p>Direccion: ${Direccion}</p>
+            <p>Codigo: ${Codigo}</p>
+            <p>Email: ${email}</p>
+            <p>Profesiones: ${Profesiones}</p>
+            <p>Categoria: ${categoria}</p>
+        `;
+    </script>
+</body>
+</html>
